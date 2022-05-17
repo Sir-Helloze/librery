@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addBook</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="ico"><a href="#" ><img src="../assets/img/libraryLogo.png" alt="logo" style="width: 80px; height: 80px;"></a></div>
+    </div>
+    <nav id="menuVert">
+        <ul>
+            <li><a href="index_library.html"><div class="icon_n"><i class="fas fa-home"></i></div><span>HOME</span></a></li>
+            <li><a href="../pages/favorites.html"><div class="icon_n"><i class="fas fa-bookmark"></i></div><span>FAVORITES</span></a></li>
+            <li><a href="#"><div class="icon_n"><i class="fas fa-book-open"></i></div><span>BOOK</span></a>
+            <ul>
+                <li><a href="#"><div class="icon_n"><i class="fas fa-plus-circle"></i></div><span>ADD BOOK</span></a></li>  
+                <li><a href="../pages/readBook.html"><div class="icon_n"><i class="fas fa-book"></i></div><span>READ A BOOK</span></a></li>
+            </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="add-book">
+        <form action="../pages/addBook.html">
+            <h5>Написать свою Книгу</h5>
+            <p>Название:<br><input type="text" id="gname"></p>
+            <p>Автор Книги:<br><input type="text" id="gauth"></p>
+            <p>Описание:<br><textarea id="gdescr"></textarea></p>
+            <input type="hidden" id="gid">
+            <button class="add-to-db">Добавить</button>
+        </form>
+    </div>
+    <div class="menu"><div class="footer">library <br> powered by <a href="#" id="footHome"><span>HOME</span></a></div></div>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/jquery-3.2.1.min.js"></script>
+</body>
+</html>
